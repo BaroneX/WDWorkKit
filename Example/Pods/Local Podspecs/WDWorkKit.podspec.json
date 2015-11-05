@@ -1,0 +1,25 @@
+{
+  "name": "WDWorkKit",
+  "version": "0.1.0",
+  "summary": "A short description of WDWorkKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/WDWorkKit",
+  "license": "MIT",
+  "authors": {
+    "Blake": "271231406@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/WDWorkKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "WDWorkKit/Classes/**/*",
+  "resource_bundles": {
+    "WDWorkKit": [
+      "WDWorkKit/Assets/*.png"
+    ]
+  }
+}

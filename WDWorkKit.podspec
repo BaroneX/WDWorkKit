@@ -16,25 +16,35 @@ Pod::Spec.new do |s|
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "WDWorkKit "
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/WDWorkKit"
+  s.homepage         = "https://github.com/BaroneX/WDWorkKit"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Blake" => "271231406@qq.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/WDWorkKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/BaroneX/WDWorkKit.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'WDWorkKit/Classes/**/*'
   s.resource_bundles = {
-    'WDWorkKit' => ['Pod/Assets/*.png']
+    'WDWorkKit' => ['WDWorkKit/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'WDWorkKit/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
+  s.dependency 'SDWebImage'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'TTTAttributedLabel'
+  s.dependency 'MJRefresh'
+  s.dependency 'MJExtension'
+  s.dependency 'LKDBHelper'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'DateTools'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'Masonry'
+
 end

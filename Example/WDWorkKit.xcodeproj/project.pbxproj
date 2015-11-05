@@ -20,9 +20,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		60FAAEA5CD97D9DF05433FCD /* Pods_WDWorkKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53DF7759F93F1B416A46F27 /* Pods_WDWorkKit_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		F8E740BCAE2A7343691C0153 /* Pods_WDWorkKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB625D7913E474F71C0A3EC /* Pods_WDWorkKit_Example.framework */; };
+		C24087ED7E10E7A312CF9E85 /* libPods-WDWorkKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7061C687D8E31EF8873BB34E /* libPods-WDWorkKit_Example.a */; };
+		E4DCF702C0E39C4988F004EB /* libPods-WDWorkKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F346ED43FA04466655E86B39 /* libPods-WDWorkKit_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		2BF5E41311C87687244B215D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		42267365DC6B658317ED5E2A /* Pods-WDWorkKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDWorkKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDWorkKit_Example/Pods-WDWorkKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4EBAB8A2CAE8CC2E424F67F5 /* Pods-WDWorkKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDWorkKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDWorkKit_Example/Pods-WDWorkKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* WDWorkKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WDWorkKit.app; path = WDWorkKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* WDWorkKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDWorkKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -52,19 +52,19 @@
 		6003F5A5195388D20070C39A /* WDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* WDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = WDWorkKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* WDWorkKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDWorkKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6EB625D7913E474F71C0A3EC /* Pods_WDWorkKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDWorkKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7061C687D8E31EF8873BB34E /* libPods-WDWorkKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDWorkKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79760473B4A63161F4185E70 /* WDWorkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WDWorkKit.podspec; path = ../WDWorkKit.podspec; sourceTree = "<group>"; };
 		8111330B6B60106245A93271 /* Pods-WDWorkKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDWorkKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDWorkKit_Tests/Pods-WDWorkKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A671F2C92E790B759C852091 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A89F041BF919E887F38793F2 /* Pods-WDWorkKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDWorkKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDWorkKit_Tests/Pods-WDWorkKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C53DF7759F93F1B416A46F27 /* Pods_WDWorkKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDWorkKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F346ED43FA04466655E86B39 /* libPods-WDWorkKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDWorkKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F8E740BCAE2A7343691C0153 /* Pods_WDWorkKit_Example.framework in Frameworks */,
+				C24087ED7E10E7A312CF9E85 /* libPods-WDWorkKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				60FAAEA5CD97D9DF05433FCD /* Pods_WDWorkKit_Tests.framework in Frameworks */,
+				E4DCF702C0E39C4988F004EB /* libPods-WDWorkKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +119,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* WDWorkKit.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* WDWorkKit_Example.app */,
+				6003F5AE195388D20070C39A /* WDWorkKit_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				6EB625D7913E474F71C0A3EC /* Pods_WDWorkKit_Example.framework */,
-				C53DF7759F93F1B416A46F27 /* Pods_WDWorkKit_Tests.framework */,
+				7061C687D8E31EF8873BB34E /* libPods-WDWorkKit_Example.a */,
+				F346ED43FA04466655E86B39 /* libPods-WDWorkKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			);
 			name = WDWorkKit_Example;
 			productName = WDWorkKit;
-			productReference = 6003F58A195388D20070C39A /* WDWorkKit.app */;
+			productReference = 6003F58A195388D20070C39A /* WDWorkKit_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* WDWorkKit_Tests */ = {
@@ -234,7 +234,7 @@
 			);
 			name = WDWorkKit_Tests;
 			productName = WDWorkKitTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* WDWorkKit_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -466,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -515,6 +515,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDWorkKit/WDWorkKit-Prefix.pch";
 				INFOPLIST_FILE = "WDWorkKit/WDWorkKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -530,6 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WDWorkKit/WDWorkKit-Prefix.pch";
 				INFOPLIST_FILE = "WDWorkKit/WDWorkKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
