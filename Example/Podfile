@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'WDWorkKit_Example', :exclusive => true do
+  pod "WDWorkKit", :path => "../"
+end
+
+target 'WDWorkKit_Tests', :exclusive => true do
+  pod "WDWorkKit", :path => "../"
+
+  
+end
