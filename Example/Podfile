@@ -4,17 +4,17 @@ platform :ios, '7.0'
 
 target 'WDWorkKit_Example', :exclusive => true do
   pod "WDWorkKit", :path => "../"
-  pod 'AFNetworking'
-  pod 'SDWebImage'
-  pod 'MBProgressHUD'
-  pod 'TTTAttributedLabel'
-  pod 'MJRefresh'
-  pod 'LKDBHelper'
-  pod 'SVProgressHUD'
-  pod 'MJExtension'
-  pod 'IQKeyboardManager'
-  pod 'Masonry'
-  pod 'DateTools'
+#  pod 'AFNetworking'
+#  pod 'SDWebImage'
+#  pod 'MBProgressHUD'
+#  pod 'TTTAttributedLabel'
+#  pod 'MJRefresh'
+#  pod 'LKDBHelper'
+#  pod 'SVProgressHUD'
+#  pod 'MJExtension'
+#  pod 'IQKeyboardManager'
+#  pod 'Masonry'
+#  pod 'DateTools'
 end
 
 target 'WDWorkKit_Tests', :exclusive => true do

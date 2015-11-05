@@ -17,8 +17,77 @@ WDWorkKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/BaroneX/WDSpecs.git' #添加私有pod仓库地址
+
 pod "WDWorkKit"
 ```
+WDWorkKit Tree 
+	
+		WDWorkKit
+		├── Assets	#资源文件
+		│   ├── b27_icon_star_gray@2x.png
+		│   ├── b27_icon_star_yellow@2x.png
+		│   ├── radio_checked.png
+		│   └── radio_unchecked.png
+		└── Classes
+		    ├── WDFrameWork #常用
+		    │   ├── NSDate+WDCalendar.h
+		    │   ├── NSDate+WDCalendar.m
+		    │   ├── NSString+Addition.h
+		    │   ├── NSString+Addition.m
+		    │   ├── NSString+PJR.h
+		    │   ├── NSString+PJR.m
+		    │   ├── Reachability.h
+		    │   ├── Reachability.m
+		    │   ├── UIDevice+Addition.h
+		    │   ├── UIDevice+Addition.m
+		    │   ├── UIImage+Addition.h
+		    │   ├── UIImage+Addition.m
+		    │   ├── WDCoreAnimationEffect.h
+		    │   ├── WDCoreAnimationEffect.m
+		    │   ├── WDCountButton.h
+		    │   ├── WDCountButton.m
+		    │   ├── WDCycleScrollView.h
+		    │   ├── WDCycleScrollView.m
+		    │   ├── WDFrameWork.h
+		    │   ├── WDJsonKit.h
+		    │   ├── WDJsonKit.m
+		    │   ├── WDReachability.h
+		    │   ├── WDReachability.m
+		    │   ├── WDSandbox.h
+		    │   ├── WDSandbox.m
+		    │   ├── WDSystemInfo.h
+		    │   ├── WDSystemInfo.m
+		    │   ├── WDUIConfigDefine.h
+		    │   ├── WDViewExt.h
+		    │   ├── WDViewExt.m
+		    │   └── WDWorkKit.h
+		    ├── WDNetWork #网络
+		    │   ├── WDNetWork.h
+		    │   └── WDNetWork.m
+		    └── WDUI #UI部分
+		        ├── CWStarRateView
+		        │   ├── CWStarRateView.h
+		        │   └── CWStarRateView.m
+		        ├── DOPDropDownMenu.h
+		        ├── DOPDropDownMenu.m
+		        ├── JKAlertDialog
+		        │   ├── JKAlertDialog.h
+		        │   └── JKAlertDialog.m
+		        ├── MPNotificationView
+		        │   ├── MPNotificationView.h
+		        │   ├── MPNotificationView.m
+		        │   ├── OBGradientView.h
+		        │   └── OBGradientView.m
+		        ├── PopoverView.h
+		        ├── PopoverView.m
+		        ├── QRadioButton
+		        │   ├── QRadioButton.h
+		        │   └── QRadioButton.m
+		        ├── UIView+Toast.h
+		        └── UIView+Toast.m
+		
+
 
 ## Author
 
