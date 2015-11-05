@@ -27,3 +27,5 @@ Blake, 271231406@qq.com
 ## License
 
 WDWorkKit is available under the MIT license. See the LICENSE file for more info.
+
+>>>>>>> 8d7b854dcc15f3eab959e56cd6a6c0d742df0a60
