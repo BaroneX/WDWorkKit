@@ -11,6 +11,13 @@
 
 @interface NSString (Addition)
 
+#define FSTRING(X) [NSString stringWithFormat:@"%@",X]
+#define APPENDSTRING(a,b) [(FSTRING(a)) stringByAppendingFormat:@"%@",b]
+#define INTSTRING(x) [NSString stringWithFormat:@"%d",x]
+#define INTEGERSTRING(x) [NSString stringWithFormat:@"%ld",x]
+
+
+#pragma mark - 字符串处理
 /**
  *  判断字符串是否为空或nil
  *
@@ -37,6 +44,14 @@
 - (NSString *)trim;
 
 #pragma mark - 有效值校验
+
+
+/**
+ *  字符是否有效
+ *
+ *  @return 是否有效
+ */
+-(BOOL)isValid;
 
 /**
  *  邮件地址是否有效
@@ -67,6 +82,127 @@
 - (BOOL)isValidUrl;
 
 - (BOOL)isVAlidChineseHZ;
+
+#pragma mark - 字符串处理
+
+/**
+ *  算字符个数
+ *
+ *  @return 字符个数
+ */
+- (NSUInteger)countNumberOfWords;
+
+/**
+ *  是否包含字符
+ *
+ *  @param subString 包含的字符
+ *
+ *  @return Yes or No
+ */
+- (BOOL)containsString:(NSString *)subString;
+
+/**
+ *  是否以字符开头
+ *
+ *  @param string 开头字符
+ *
+ *  @return Yes or No
+ */
+- (BOOL)isBeginsWith:(NSString *)string;
+
+/**
+ *  是否以字符结尾
+ *
+ *  @param string  结尾字符
+ *
+ *  @return  Yes or No
+ */
+- (BOOL)isEndssWith:(NSString *)string;
+
+/**
+ *  替换字符
+ *
+ *  @param olderChar 需要替换的字符
+ *  @param newerChar 替换字符
+ *
+ *  @return 替换后字符
+ */
+- (NSString *)replaceCharcter:(NSString *)olderChar withCharcter:(NSString *)newerChar;
+
+/**
+ *  截取字符
+ *
+ *  @param begin 开始位置
+ *  @param end   结束位置
+ *
+ *  @return 截取后的字符
+ */
+- (NSString*)getSubstringFrom:(NSInteger)begin to:(NSInteger)end;
+
+/**
+ *  删除字符
+ *
+ *  @param subString 需要删除的字符
+ *
+ *  @return 删除后的字符
+ */
+- (NSString *)removeSubString:(NSString *)subString;
+
+/**
+ *  是否只包含字母
+ *
+ *  @return Yes or No
+ */
+- (BOOL)containsOnlyLetters;
+
+/**
+ *  是否只包含数字
+ *
+ *  @return Yes or No
+ */
+- (BOOL)containsOnlyNumbers;
+
+/**
+ *  是否只包含字母和数字
+ *
+ *  @return Yes or No
+ */
+- (BOOL)containsOnlyNumbersAndLetters;
+
+/**
+ *  从数组获取字符 拼接@" "
+ *
+ *  @param array 字符数组
+ *
+ *  @return 拼接后的字符
+ */
++ (NSString *)getStringFromArray:(NSArray *)array;
+
+/**
+ *  把字符转换为数组 以separateString分割
+ *
+ *  @param separateString 分割字符
+ *
+ *  @return 分割后的数组
+ */
+- (NSArray *)getArrayWithSeparateString:(NSString*)separateString;
+
+/**
+ *  转换为data utf-8
+ *
+ *  @return 字符data
+ */
+- (NSData *)convertToData;
+
+/**
+ *  data转字符 utf-8
+ *
+ *  @param data data
+ *
+ *  @return 字符
+ */
++ (NSString *)getStringFromData:(NSData *)data;
+
 
 #pragma mark -  hash算法
 /**

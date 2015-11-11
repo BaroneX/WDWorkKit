@@ -17,5 +17,9 @@
 #import "JKAlertDialog.h"
 #import "QRadioButton.h"
 #import "CWStarRateView.h"
+#import "UIControl+WDActionBlock.h"
+#import "UIBarButtonItem+WDActionBlock.h"
+#import "UIGestureRecognizer+WDActionBlock.h"
+#import "WDImageLoaderController.h"
 
 #endif /* WDWorkKit_h */

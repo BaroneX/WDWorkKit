@@ -47,6 +47,12 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+//Checking if String is empty or nil
+-(BOOL)isValid
+{
+    return ([[self trim] isEqualToString:@""] || self == nil || [self isEqualToString:@"(null)"]||[self isEqualToString:@"<null>"]) ? NO :YES;
+}
+
 
 - (BOOL)isValidEmail
 {
@@ -91,6 +97,7 @@
 
 }
 
+#pragma mark - hash算法
 
 - (NSString *)stringMD5
 {
@@ -213,5 +220,120 @@
     return s;
     
 }
+
+
+#pragma mark - 字符处理
+
+// Counts number of Words in String
+- (NSUInteger)countNumberOfWords
+{
+    NSScanner *scanner = [NSScanner scannerWithString:self];
+    NSCharacterSet *whiteSpace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    
+    NSUInteger count = 0;
+    while ([scanner scanUpToCharactersFromSet: whiteSpace  intoString: nil]) {
+        count++;
+    }
+    
+    return count;
+}
+
+// If string contains substring
+- (BOOL)containsString:(NSString *)subString
+{
+    return ([self rangeOfString:subString].location == NSNotFound) ? NO : YES;
+}
+
+// If my string starts with given string
+- (BOOL)isBeginsWith:(NSString *)string
+{
+    return ([self hasPrefix:string]) ? YES : NO;
+}
+
+// If my string ends with given string
+- (BOOL)isEndssWith:(NSString *)string
+{
+    return ([self hasSuffix:string]) ? YES : NO;
+}
+
+
+
+// Replace particular characters in my string with new character
+- (NSString *)replaceCharcter:(NSString *)olderChar withCharcter:(NSString *)newerChar
+{
+    return  [self stringByReplacingOccurrencesOfString:olderChar withString:newerChar];
+}
+
+// Get Substring from particular location to given lenght
+- (NSString*)getSubstringFrom:(NSInteger)begin to:(NSInteger)end
+{
+    NSRange r;
+    r.location = begin;
+    r.length = end - begin;
+    return [self substringWithRange:r];
+}
+
+// Remove particular sub string from main string
+-(NSString *)removeSubString:(NSString *)subString
+{
+    if ([self containsString:subString])
+    {
+        NSRange range = [self rangeOfString:subString];
+        return  [self stringByReplacingCharactersInRange:range withString:@""];
+    }
+    return self;
+}
+
+
+// If my string contains ony letters
+- (BOOL)containsOnlyLetters
+{
+    NSCharacterSet *letterCharacterset = [[NSCharacterSet letterCharacterSet] invertedSet];
+    return ([self rangeOfCharacterFromSet:letterCharacterset].location == NSNotFound);
+}
+
+// If my string contains only numbers
+- (BOOL)containsOnlyNumbers
+{
+    NSCharacterSet *numbersCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet];
+    return ([self rangeOfCharacterFromSet:numbersCharacterSet].location == NSNotFound);
+}
+
+// If my string contains letters and numbers
+- (BOOL)containsOnlyNumbersAndLetters
+{
+    NSCharacterSet *numAndLetterCharSet = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
+    return ([self rangeOfCharacterFromSet:numAndLetterCharSet].location == NSNotFound);
+}
+
+// Get String from array
++ (NSString *)getStringFromArray:(NSArray *)array
+{
+    return [array componentsJoinedByString:@" "];
+}
+
+// Convert Array from my String
+- (NSArray *)getArrayWithSeparateString:(NSString *)separateString
+{
+    if (!separateString) {
+        return nil;
+    }
+    return [self componentsSeparatedByString:separateString];
+}
+
+// Convert string to NSData
+- (NSData *)convertToData
+{
+    return [self dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+// Get String from NSData
++ (NSString *)getStringFromData:(NSData *)data
+{
+    return [[NSString alloc] initWithData:data
+                                 encoding:NSUTF8StringEncoding];
+    
+}
+
 
 @end

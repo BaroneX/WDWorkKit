@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8E4FD8AE3FEE4DFC1E7EF495'
+               BlueprintIdentifier = '18F9CE5B822A57B92F72C5D2'
                BlueprintName = 'WDWorkKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWDWorkKit.a'>
