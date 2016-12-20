@@ -39,4 +39,12 @@
  */
 + (NSString *)localIP;
 
+
++ (NSString *)deviceIPAdress;
+
+
+/*!
+ * 获取当前设备网关地址
+ */
++ (NSString *)getGatewayIPAddress;
 @end
